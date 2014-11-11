@@ -22,7 +22,7 @@ class TestChartkick < Minitest::Test
   end
 
   def test_options_not_mutated
-    options = {id: "boom"}
+    options = {:id => "boom"}
     line_chart @data, options
     assert_equal "boom", options[:id]
   end
